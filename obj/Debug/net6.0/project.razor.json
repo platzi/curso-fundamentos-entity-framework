@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\platzi\\projectoef\\projectoef.csproj",
+  "FilePath": "c:\\platzi\\projectoef\\proyectoef.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16295,7 +16295,7 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "projectoef",
+  "RootNamespace": "proyectoef",
   "Documents": [],
   "SerializationFormat": "0.2"
 }
