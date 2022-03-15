@@ -22,6 +22,23 @@ public class TareasContext: DbContext
             categoria.Property(p=> p.Descripcion);
         });
 
+        modelBuilder.Entity<Tarea>(tarea=>
+        {
+            tarea.ToTable("Tarea");
+            tarea.HasKey(p=> p.TareaId);
+
+            tarea.HasOne(p=> p.Categoria).WithMany(p=> p.Tareas).HasForeignKey(p=> p.CategoriaId);
+
+            tarea.Property(p=> p.Titulo).IsRequired().HasMaxLength(200);
+
+            tarea.Property(p=> p.Descripcion);
+
+            tarea.Property(p=> p.PrioridadTarea);
+
+            tarea.Property(p=> p.FechaCreacion);
+
+        });
+
     }
 
 }
