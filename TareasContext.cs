@@ -37,6 +37,8 @@ public class TareasContext: DbContext
 
             tarea.Property(p=> p.FechaCreacion);
 
+            tarea.Ignore(p=> p.Resumen);
+
         });
 
     }
